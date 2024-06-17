@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sedjoelan Coffee - Menu</title>
+    <link rel="icon" type="image" href="assets/logo-2.png" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Font Awesome CDN Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" />
+    <!-- Custom CSS File Link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mennu.css" />
+</head>
+
+<body>
+    <div>
+        <header class="header">
+            <div id="menu-btn" class="fas fa-bars"></div>
+    
+            <a href="./index.html" class="logo">
+                <img src="assets/logo.jpg" alt="" width="70px" height="70px"/>
+            </a>
+    
+            <nav class="navbar">
+                <a href="./index.html">Home</a>
+                <a href="./menu.html">Menu</a>
+                <a href="./review.html">Review</a>
+                <a href="./about.html">About</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <div class="mennu">
+            <!-- MENU -->
+            <section class="menu" id="menu">
+                <h1 class="heading">our menu <span>popular menu</span></h1>
+
+                <div class="box-container">
+                    <a href="#" class="box">
+                        <img src="image/snack.png" alt="" />
+                        <div class="content">
+                            <h3>Cheese Cake Desert</h3>
+                            <p>
+                                Hidangan penutup yang terdiri dari krim keju dam crust terbuat dari biskuit.
+                            </p>
+                            <span>20K</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="box">
+                        <img src="image/menu-6.png" alt="" />
+                        <div class="content">
+                            <h3>Latte</h3>
+                            <p>
+                               Fresh brewed coffee and steamed milk.
+                            </p>
+                            <span>20K</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="box">
+                        <img src="image/snack.png" alt="" />
+                        <div class="content">
+                            <h3>Fried Chips</h3>
+                            <p>
+                                Potongan kentang yang digoreng dengan minyak panas hingga garing.
+                            </p>
+                            <span>12K</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="box">
+                        <img src="image/menu-6.png" alt="" />
+                        <div class="content">
+                            <h3>First Thing's Thirst</h3>
+                            <p>
+                                Mocktail racikan Sedjoelan yang super segar.
+                            </p>
+                            <span>20K</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="box">
+                        <img src="image/snack.png" alt="" />
+                        <div class="content">
+                            <h3>Cookies</h3>
+                            <p>
+                               Cookies yang terbuat dari tepung terigu yang terkenal dengan rasa manisnya, <small>Seperti kamu.</small>
+                            </p>
+                            <span>15K</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="box">
+                        <img src="image/menu-6.png" alt="" />
+                        <div class="content">
+                            <h3>Dressed Up Drinks</h3>
+                            <p>
+                                Mocktail yang rasanya seperti permen Nano Nano, Manis, Asam berpadu di dalamnya.
+                            </p>
+                            <span>20K</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="footer">
+                <div class="box-container">
+                    <div class="box">
+                        <h3>Useful Links</h3>
+                        <a href="./index.html">Home</a>
+                        <a href="./about.html">About</a>
+                        <a href="./menu.html">Menu</a>
+                    </div>
+                    <div class="box">
+                        <h3>Contact Us</h3>
+                        <a href="#">+628123456789</a>
+                        <a href="#">sedjoelan@gmail.com</a>
+                        <a href="#">Jambi, Indonesia</a>
+                    </div>
+                    <div class="box">
+                        <h3>Follow Us</h3>
+                        <a href="#">facebook</a>
+                        <a href="#">twitter</a>
+                        <a href="#">instagram</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        gsap.from("#menu h1", {
+            opacity: 0,
+            duration: 2.5,
+            ease: "back.out(1.7)",
+            y: -250,
+            scrollTrigger: {
+                trigger: "#menu",
+                scroller: "body",
+                //  markers:true,
+                start: "top 50%",
+                end: "bottom 20%",
+            },
+        });
+    </script>
+</body>
+
+</html>
